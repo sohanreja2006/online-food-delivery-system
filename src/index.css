@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --bg-paper: #faf7f2;
+  --bg-elevated: #ffffff;
+  --bg-subtle: #f3ede3;
+  --ink-primary: #1c1917;
+  --ink-secondary: #57504b;
+  --ink-muted: #847a72;
+  --accent-terracotta: #d94e28;
+  --accent-terracotta-dark: #b63b19;
+  --accent-basil: #1f7a4c;
+  --accent-amber: #d97706;
+  --border-warm: #e7dfd3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-paper);
+  color: var(--ink-primary);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-mono-code {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@media print {
+  header,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff;
+  }
+}
+
+@keyframes toastCountdown {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+
